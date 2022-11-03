@@ -10,6 +10,8 @@ body {
 
 
 #hexGrid {
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -17,7 +19,6 @@ body {
   overflow: hidden;
   font-family: sans-serif;
   list-style-type: none;
-
 }
 
 .hex {
@@ -219,12 +220,24 @@ transition: 0.8s;
     #hexGrid {
         font-size: 8px;
     }
-  
-
-  
- 
 }
 
+
+.grad_box{
+  margin-top: 3rem;
+  padding: 2rem ;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+.grad_box div{
+  display: block;
+  background-color: white;
+  padding: 1.5rem;
+  border: 5px solid #950000;
+}
 /* Percent Circle Section */
 
 /* .circles {
