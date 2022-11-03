@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 body {
     background: url('FHU_Logos/Back_red.png');
@@ -51,7 +52,7 @@ body {
 .hexIn * {
   position: absolute;
   visibility: visible;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  outline:2px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
 .hexLink {
     display:block;
@@ -91,7 +92,7 @@ body {
     text-align: center;
   bottom: 50%;
   padding-top:50%;
-  font-size: 1.5em;
+  font-size: 3em;
   z-index: 1;
 }
 .hex h1:before, .hex h1:after {
@@ -110,6 +111,7 @@ body {
 top: 50%;
 text-align: center;
 text-transform: uppercase;
+font-size: 1.5rem;
     
 }
 
@@ -230,14 +232,18 @@ transition: 0.8s;
   
 } */
 
+.grad_rates{
+  margin: 2rem;
+}
+
 .circles{
   display: flex;
 }
 
 .circle-wrap {
   margin: 50px auto;
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
   background: #e6e2e7;
   border-radius: 50%;
   
@@ -245,18 +251,18 @@ transition: 0.8s;
 
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
   position: absolute;
   border-radius: 50%;
 }
 
 .circle-wrap .circle .mask {
-  clip: rect(0px, 150px, 150px, 75px);
+  clip: rect(0px, 240px, 250px, 75px);
 }
 
 .circle-wrap .circle .mask .fill {
-  clip: rect(0px, 75px, 150px, 0px);
+  clip: rect(0px, 300px, 300px, 0px);
   background-color: #950000;
 }
 .circle-wrap .circle .mask.full,
@@ -275,8 +281,8 @@ transition: 0.8s;
 }
 
 .circle-wrap .inside-circle {
-  width: 130px;
-  height: 130px;
+  width: 205px;
+  height: 205px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
   line-height: 130px;
