@@ -28,16 +28,15 @@ body {
   backface-visibility: hidden;
   will-change: transform;
   transition: all 0.5s;
-
 }
 .hex::after{
   content:'';
   display:block;
   padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
-  
 }
 .hexIn{
   position: absolute;
+
   width:96%;
   padding-bottom: 110.851%; /* =  width / sin(60) */
   margin: 2%;
@@ -48,6 +47,7 @@ body {
       -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
           transform: rotate3d(0,0,1,-60deg) skewY(30deg);
     transition: all 0.5s;
+
 }
 .hexIn * {
   position: absolute;
@@ -285,7 +285,8 @@ transition: 0.8s;
   height: 205px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  line-height: 130px;
+
+  justify-content: center;
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
@@ -295,7 +296,9 @@ transition: 0.8s;
   font-size: 2em;
 }
 
-
+.inside-circle p{
+  padding-top: 3.5rem;
+}
 
 /* #circle {
   width: 100%;
