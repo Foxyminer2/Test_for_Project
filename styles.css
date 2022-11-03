@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background: rgb(123, 158, 158);
+    background: rgb(161, 161, 161);
     
 }
 
@@ -16,6 +16,7 @@ body {
   overflow: hidden;
   font-family: sans-serif;
   list-style-type: none;
+
 }
 
 .hex {
@@ -26,11 +27,13 @@ body {
   backface-visibility: hidden;
   will-change: transform;
   transition: all 0.5s;
+
 }
 .hex::after{
   content:'';
   display:block;
   padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+  
 }
 .hexIn{
   position: absolute;
@@ -254,7 +257,7 @@ transition: 0.8s;
 
 .circle-wrap .circle .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #9404a8;
+  background-color: #950000;
 }
 .circle-wrap .circle .mask.full,
 .circle-wrap .circle .fill {
@@ -275,7 +278,7 @@ transition: 0.8s;
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #fff;
+  background: rgb(255, 255, 255);
   line-height: 130px;
   text-align: center;
   margin-top: 10px;
