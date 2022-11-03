@@ -8,6 +8,21 @@ body {
     
 }
 
+.mission{
+  /*padding: 2rem 1rem;*/
+  margin: 1rem;
+}
+
+.mission div{
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 1rem;
+  padding: 1rem;
+  padding-bottom: 0px;
+  display: block;
+  
+}
 
 #hexGrid {
   margin: 2rem 2rem;
