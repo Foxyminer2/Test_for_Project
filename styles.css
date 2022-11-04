@@ -243,16 +243,16 @@ transition: 0.8s;
   padding: 2rem ;
   justify-content: center;
   text-align: center;
-  
+  background-color: rgba(255,255,255,0.5);
   
 }
 
-.grad_box div{
+/* .grad_box div{
   display: block;
   background-color: white;
   padding: 1.5rem;
   border: 5px solid #950000;
-}
+} */
 /* Percent Circle Section */
 
 /* .circles {
@@ -308,25 +308,101 @@ transition: 0.8s;
   }
 }
 
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .filla .box {
+  animation: fill ease-in-out 3s;
+  transform: rotate(170deg);
+}
+ 
 .circle-wrap .inside-circle {
   width: 205px;
   height: 205px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-
-  justify-content: center;
+  vertical-align: center;
   text-align: center;
+  
   margin-top: 10px;
   margin-left: 10px;
   position: absolute;
   z-index: 100;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .inside-circle p{
-  padding-top: 3.5rem;
+  padding-top: 5rem;
+  
 }
+
+/*-------------new circl---------------------------------------------------*/
+.circle-wrapa {
+  margin: 50px auto;
+  width: 225px;
+  height: 225px;
+  background: #e6e2e7;
+  border-radius: 50%;
+  
+}
+
+.circle-wrapa .circley .maska,
+.circle-wrapa .circley .filla {
+  width: 225px;
+  height: 225px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrapa .circley .maska {
+  clip: rect(0px, 240px, 250px, 75px);
+}
+
+.circle-wrapa .circley .maska .filla {
+  clip: rect(0px, 300px, 300px, 0px);
+  background-color: #950000;
+}
+.circle-wrapa .circley .maska.fulla,
+.circle-wrapa .circley .filla {
+  animation: fill ease-in-out 3s;
+  transform: rotate(0deg);
+}
+ 
+@keyframes filla {
+  0% {
+    transform: rotate(0deg);
+  }
+  98% {
+    transform: rotate(0deg);
+  }
+}
+
+.circle-wrapa .circley .maska.fulla,
+.circle-wrapa .circley .filla .box {
+  animation: fill ease-in-out 3s;
+  transform: rotate(150deg);
+}
+ 
+.circle-wrapa .inside-circley {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  vertical-align: center;
+  text-align: center;
+  
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.inside-circley p{
+  padding-top: 5rem;
+  
+}
+
 
 /* #circle {
   width: 100%;
