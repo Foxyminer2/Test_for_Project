@@ -108,7 +108,7 @@ body {
     text-align: center;
   bottom: 50%;
   padding-top:50%;
-  font-size: 3em;
+  font-size: 1.5em;
   z-index: 1;
 }
 .hex h1:before, .hex h1:after {
@@ -127,7 +127,7 @@ body {
 top: 50%;
 text-align: center;
 text-transform: uppercase;
-font-size: 1.5rem;
+font-size: 3rem;
     
 }
 
