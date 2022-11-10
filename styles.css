@@ -5,12 +5,14 @@
 }
 body {
     background: url('FHU_Logos/Back_red.png');
-    
+    font-family: 'Poppins',Arial, Helvetica, sans-serif
 }
 
 .mission{
   /*padding: 2rem 1rem;*/
-  margin: 1rem;
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(120,47,66,0.5);
 }
 
 .mission div{
@@ -29,7 +31,7 @@ body {
   padding: 2rem 2rem;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  
   margin: 0 auto;
   overflow: hidden;
   font-family: sans-serif;
@@ -180,7 +182,7 @@ transition: 0.8s;
 
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+@media(min-width:1201px) { /* <- 5-4  hexagons per row */
   #hexGrid{
     padding-bottom: 4.4%
   }
@@ -192,7 +194,7 @@ transition: 0.8s;
   }
 }
 
-@media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
+@media(max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
   #hexGrid{
     padding-bottom: 5.5%;
     font-size: 13px;
@@ -205,10 +207,10 @@ transition: 0.8s;
   }
 }
 
-@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+@media(max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
   #hexGrid{
     padding-bottom: 7.4%;
-    font-size: 14px;
+    font-size: 0rem;
   }
   .hex {
     width: 33.333%; /* = 100 / 3 */
@@ -218,22 +220,38 @@ transition: 0.8s;
   }
 }
 
-@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+@media(max-width: 900px) { /* <- 2-1  hexagons per row */
   #hexGrid{
     padding-bottom: 11.2%;
     font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .hex {
     width: 50%; /* = 100 / 3 */
+
   }
   .hex:nth-child(3n+3){ /* first hexagon of even rows */
     margin-left:25%;  /* = width of .hex / 2  to indent even rows */
   }
+
+  .circles{
+    display:flex;
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width: 400px) {
-    #hexGrid {
-        font-size: 8px;
+@media(max-width: 600px) {
+    .hexGrid{       
+        display:flex;
+        flex-direction: column;
+    }
+    .hex{
+      font-size: 1rem;
+    }
+    .circles{
+      display: flex;
+      flex-direction: column;
     }
 }
 
