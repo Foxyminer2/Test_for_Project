@@ -16,8 +16,8 @@ body {
   height: auto;
   width: 40%;
   position: center;
-  padding: 1rem;
-  margin:1rem;
+  padding: 0px;
+  margin:0px;
   border: 1px solid black;
   background-color: #e6e2e7;
   opacity: 0.95;
@@ -209,7 +209,7 @@ transition: 0.8s;
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
   #fhu_text:before{
-    content: "Freed Hardeman Univeristy";
+    content: "FHU";
     font-size: 1.5rem;
   } 
 }
@@ -227,7 +227,7 @@ transition: 0.8s;
   }
 
   #fhu_text:before{
-    content: "Freed Hardeman Univeristy";
+    content: "FHU";
     font-size: 1.5rem;
   } 
 }
@@ -241,7 +241,7 @@ transition: 0.8s;
   }
 
   #fhu_text:before{
-    content: "Freed Hardeman Univeristy";
+    content: "FHU";
     font-size: 1.125rem;
   } 
 
@@ -269,7 +269,7 @@ transition: 0.8s;
     width: 80%;
   }
   #fhu_text:before{
-    content: "Freed Hardeman Univeristy";
+    content: "FHU";
     font-size: 1.125rem;
   } 
 }
@@ -290,8 +290,8 @@ transition: 0.8s;
   }
   
   #fhu_text:before{
-    content: "Freed Hardeman Univeristy";
-    font-size: 1.125rem;
+    content: "FHU";
+    font-size: 2.125rem;
   } 
 
   .circles{
