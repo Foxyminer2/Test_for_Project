@@ -303,6 +303,34 @@ transition: 0.8s;
 }
 
 
+@media(max-width: 600px) { /* <- 2-1  hexagons per row */
+  #hexGrid{
+    padding-bottom: 11.2%;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hex {
+    width: 60%; /* = 100 / 3 */
+    padding-top:20% ;
+
+  }
+  .hex:nth-child(n+1){ /* first hexagon of even rows */
+     margin-left:20%; /* = width of .hex / 2  to indent even rows */
+     
+  }
+  
+  #fhu_text:before{
+    content: "FHU";
+    font-size: 2.125rem;
+  } 
+
+  
+}
+
+
+
+
 @media(max-width: 900px) { /* <- 2-1  hexagons per row */
   #hexGrid{
     padding-bottom: 11.2%;
