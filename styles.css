@@ -14,13 +14,17 @@ body {
 
 .title-Image img{
   height: auto;
-  width: 45%;
+  width: 40%;
   position: center;
   padding: 0px;
   margin:0px;
+  border: 1px solid black;
+  background-color: #e6e2e7;
+  opacity: 0.95;
 }
 .mission{
   background-color: rgba(120,47,66,0.35);
+  margin: 2rem;
 }
 
 .mission div{
@@ -135,8 +139,14 @@ body {
 top: 50%;
 text-align: center;
 text-transform: uppercase;
-font-size: 1.5rem;
-    
+font-size: 1.5rem;    
+}
+
+#fhu_text{
+  top: 48%;
+text-align: center;
+text-transform: uppercase;
+font-size: 1.45rem; 
 }
 
 .img {
@@ -198,6 +208,10 @@ transition: 0.8s;
   .hex:nth-child(9n+6){ /* first hexagon of even rows */
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
+  #fhu_text:before{
+    content: "Freed Hardeman Univeristy";
+    font-size: 1.5rem;
+  } 
 }
 
 @media(max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
@@ -211,6 +225,11 @@ transition: 0.8s;
   .hex:nth-child(7n+5){ /* first hexagon of even rows */
     margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
   }
+
+  #fhu_text:before{
+    content: "Freed Hardeman Univeristy";
+    font-size: 1.5rem;
+  } 
 }
 @media(min-width: 900px) and (max-width: 1000px){
   #demo1{
@@ -220,6 +239,11 @@ transition: 0.8s;
   #demo2{
     font-size: 1.125rem;
   }
+
+  #fhu_text:before{
+    content: "Freed Hardeman Univeristy";
+    font-size: 1.125rem;
+  } 
 
   .title-Image img{
     height: auto;
@@ -244,6 +268,10 @@ transition: 0.8s;
     height: auto;
     width: 80%;
   }
+  #fhu_text:before{
+    content: "Freed Hardeman Univeristy";
+    font-size: 1.125rem;
+  } 
 }
 
 @media(max-width: 900px) { /* <- 2-1  hexagons per row */
@@ -260,6 +288,11 @@ transition: 0.8s;
   .hex:nth-child(3n+3){ /* first hexagon of even rows */
     margin-left:25%;  /* = width of .hex / 2  to indent even rows */
   }
+  
+  #fhu_text:before{
+    content: "Freed Hardeman Univeristy";
+    font-size: 1.125rem;
+  } 
 
   .circles{
     display:flex;
@@ -293,8 +326,11 @@ transition: 0.8s;
     height: auto;
     width: 100%;
   }
+  #fhu_text:before{
+    content: "FHU";
+    font-size: 1.3rem;
+  }
 }
-
 
 .grad_box{
   margin-top: 3rem;
